@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //var livro = {
+                //Titulo: "Harry Potter e o prisioneiro de Azkaban",
+              //  Autor: "N.A Rodrigues",
+               // Editora: "Rocco",
+               // Ano: "1999",
+
+           // }
+           var resposta = prompt("Deseja criar um personagem? 1-SIM 2-Não")
+           while(resposta == "1"){
+           var n= prompt("Digite o nome do personagem: ");
+           var f = parseInt(prompt("Digite a força -3 a +3: "));
+           var d= parseInt(prompt("Digite a destreza -3 a +3: "));
+           var a = parseInt(prompt("Digite a agilidade -3 a +3: "));
+           var i = parseInt(prompt("Digite a inteligencia -3 a +3: "));
+           var p = parseInt(prompt("Digite a percepção -3 a +3: "));
+
+           var personagem={
+            nome:n,
+            forca:f,
+            destreza:d,
+            agilidade:a,
+            inteligencia:i,
+            percepção:p,
+            imprimeDados:function () {
+                document.write("<b>Nome:<b> "+this.nome+" <br>" );
+                document.write("<b>Força:<b> "+this.forca+" <br>" );
+                document.write("<b>Destreza:</b> "+this.destreza+" <br>");
+                document.write("<b>Agilidade:<b> "+this.agilidade+" <br>" );
+                document.write("<b>Inteligencia:<b> "+this.inteligencia+" <br>" );
+                document.write("<b>Percepçao:<b> "+this.percepção+" <br>" );
+
+ 
+                
+            }
+        } 
+        reposta = prompt("Deseja criar mais algum personagem?")
+
+    }
+            personagem.imprimeDados();
+           
+
+            
+        </script>
+    </body>
+</html>

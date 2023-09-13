@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var carro = {
+                modelo: "HB20",
+                marca: "HYUNDAY",
+                cor: "Cinza Silk",
+                ano: 2022,
+                qtdLugares: 5,
+                tipoCarro: "hatch",
+                tamanhoRoda:15,
+                tipoCombustível:"flex",
+                potencia: 100,
+                preco:82000,
+            
+            acessorios:["Som integrado","Ar-condicionado", "Blue Link"],
+            endereço:{
+            logradouro: "AV. Caxangá,1134",
+            bairro: "Iputinga",
+            cidade: "Recife"
+            }
+            
+            }
+
+
+            document.write(carro.acessorios[2]);
+            carro.acessorios.push("Som integrado")
+
+              
+            for(var i = 0; i < carro.acessorios.length; i++){
+                document.write(carro.acessorios[i] + "<br>");
+
+            }
+
+
+            document.write(carro.modelo);
+            console.log(carro)
+            
+            </script>
+    </body>
+</html>
